@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -23,9 +24,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#">Twitter <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Resume</a>
-                    <a class="nav-item nav-link" href="/blog">Blog</a>
+                    <a class="nav-item nav-link" href="https://twitter.com/heksus23">Twitter <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="{% static 'resume.docx' %}">Resume</a>
+                    <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
                 </div>
             </div>
         </nav>
